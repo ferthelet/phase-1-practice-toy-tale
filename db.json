@@ -47,6 +47,12 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": 1
+    },
+    {
+      "name": "Jessie",
+      "image": "https://e7.pngegg.com/pngimages/57/390/png-clipart-jessy-of-toy-story-jessie-toy-story-sheriff-woody-buzz-lightyear-andy-gudi-fictional-character-cartoon.png",
+      "likes": 0,
+      "id": 9
     }
   ]
 }

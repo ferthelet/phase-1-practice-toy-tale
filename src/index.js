@@ -82,12 +82,13 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
   })
-
 })
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const toyCollection = document.querySelector("#toy-collection")
+  const addBtn = document.querySelector("#new-toy-btn");
+  const toyFormContainer = document.querySelector(".container");
+
   fetch("http://localhost:3000/toys")
   .then(response => response.json())
   .then(toys => {
@@ -104,5 +105,19 @@ document.addEventListener("DOMContentLoaded", () => {
       toyCollection.append(toyCard)
     })
   })
+  addBtn.addEventListener("click", () => {
+    // hide & seek with the form
+    addToy = !addToy;
+    if (addToy) {
+      toyFormContainer.style.display = "block";
+    } else {
+      toyFormContainer.style.display = "none";
+    }
+  });
 })
 
+
+
+
+// Path: db.json
+// json
